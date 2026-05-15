@@ -1,19 +1,27 @@
-# 📊 Project 1: Freight Cost Optimization Dashboard
+## 📦 Delivery Split Classification Macro
 
-## 📌 Overview
-Analyzed freight and logistics data to identify cost-saving opportunities and improve transport efficiency.
+- Developed to identify and classify delivery splits based on delivery number patterns  
+- Uses prefix logic:
+  - **986******* → Initial delivery**
+  - **801–899******* → Split deliveries**
+  
+- Groups related deliveries using:
+  - Ship-to party  
+  - Route  
+  - Planned delivery date  
+  - Delivery suffix (last 7 digits)
 
-## 🛠 Tools Used
-- Power BI
-- SQL
-- Excel
+- Classifies each delivery into defined scenarios:
+  - Full delivery (no split)  
+  - Single split  
+  - Multiple splits  
+  - Same-day split cases  
 
-## 📈 What I Did
-- Analyzed freight invoices and transport spend
-- Identified high-cost routes and inefficiencies
-- Built interactive dashboards for KPI tracking
+- Outputs results into:
+  - **Column AI → Primary classification**
+  - **Column AJ → Same-day split logic**
 
-## 💡 Impact
-- Achieved €100K annual cost savings
-- Improved cost visibility for stakeholders
-
+- Helps to:
+  - Identify delivery split patterns  
+  - Reduce manual analysis  
+  - Highlight potential cost-impact scenarios  
